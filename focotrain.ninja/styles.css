@@ -1,0 +1,43 @@
+div {
+    /*   border: 1px solid red; */
+}
+
+.container {
+    vmin: 100;
+    vmax: 100;
+};
+
+.train_hover {
+    position: absolute;
+}
+
+.header {
+    position: relative;
+}
+
+img {
+    width: 100%
+}
+
+.train {
+    height: 100px;
+    width: 100px;
+}
+
+.train:hover {
+    transition: all 2s ease-in-out;
+    transform: translate(650px,0);
+}
+
+.ninja {
+    height: 200px;
+    width: 200px;
+}
+
+.ninja:hover {
+    transition: all 2s ease-in-out;
+    transform: translate(650px,0);
+}
+body {
+    cursor: url('https://upload.wikimedia.org/wikipedia/commons/d/d8/Moscow_Monorail_train_(cropped).jpg'), default;
+}

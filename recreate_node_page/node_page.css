@@ -1,0 +1,36 @@
+header {
+    background-color: rgba(26, 26, 26, .9);
+}
+
+header a{
+    color: white;
+    text-transform: uppercase;
+}
+
+img {
+    size: 2em;
+    margin: auto;
+}
+
+.link {
+
+}
+
+.middle {
+
+}
+
+.middle a{
+    color: darkolivegreen;
+}
+
+.info {
+
+}
+
+/*css by fellow student Erik Mura*/
+/*#navigation li::after {
+   content: "|";
+   margin-left: 10px;
+   margin-right: 10px;
+}*/
