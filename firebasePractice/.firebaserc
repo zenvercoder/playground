@@ -1,1 +1,5 @@
-{}
+{
+  "projects": {
+    "default": "firstfirebaseproject-de43c"
+  }
+}
