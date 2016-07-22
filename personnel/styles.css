@@ -1,0 +1,110 @@
+/*center form and make it visible with a border:*/
+form, .card {
+    margin: 0 auto;
+    height: 500px;
+    max-width: 300px;
+    padding: 1em;
+    display: inline-block;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    text-align: left;
+}
+
+img {
+    height: 200px;
+    max-width: 300px;
+    margin: 2px;
+}
+
+h1 {
+    font-size: 1em;
+}
+
+/*add some space between each of the form widgets:*/
+form div + div {
+    margin-top: 1.5em;
+}
+
+label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: block;
+    width: 90%;
+    text-align: left;
+}
+
+input, textarea, .output {
+    font: 1em sans-serif;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+    border-color: #000;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+
+#button, #btn {
+    padding-left: 0;
+    color: white;
+    margin-left: .5em;
+    height: 50px;
+    width: 300px;
+    font-size: 18px;
+    /*width: 75%;*/
+    background-color: #3fbf6a;
+}
+
+#name {
+    color: rgba(191, 191, 191, 0.8);
+}
+
+input[required]{
+    border: 1px solid #999;
+}
+
+input[required]::before {
+    content: "*";
+    width: 1em;
+    height: 1em;
+    display: block;
+}
+
+.output {
+    font: 1em sans-serif;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    vertical-align: top;
+    resize: vertical;
+
+    content: "*";
+    height: 1em;
+    display: block;
+
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    margin: 0em;
+}
+
+.two {
+    float: right;
+}
+
+.two div + div {
+    margin-top: 1.5em;
+}
+
+/*https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form*/

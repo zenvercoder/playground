@@ -4,6 +4,9 @@ var store1 = require('./store1-data.js');
 
 // How would you access the value '4.63' from store1?
 
+for(key of store1){
+    console.log(store1[key])
+}
 
 // How would you access how many 'Mint Wafers' were sold on January 7th?
 
