@@ -23,7 +23,7 @@ $('#role').on('change', function(event){
     //$('.Role').text(role);
 });
 
-$('#button').on('click', function(event){
+$('#submit_button').on('click', function(event){
     event.preventDefault(event);
     $(".firstName").text(value);
     $(".lastName").text(lastNameValue);
@@ -32,15 +32,16 @@ $('#button').on('click', function(event){
 
 $.ajax({
     "url": "http://galvanize-student-apis.herokuapp.com/gpersonnel/roles",
-    "type": "POST",
+    "type": "GET",
 
     success: function(data) {
-        for(var item of data){
-            console.log(item.title);
-
+        for (var item of data) {
+            console.log("item.title= " + item.title);
         }
     }
 });
+
+
 
 //keydown v keyup... keydown is suuuper slow
 //keydown, we get the previous value, one behind.
