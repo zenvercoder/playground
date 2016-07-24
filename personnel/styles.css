@@ -50,7 +50,7 @@ textarea {
     resize: vertical;
 }
 
-#button, #btn {
+#submit_button, #btn {
     padding-left: 0;
     color: white;
     margin-left: .5em;
