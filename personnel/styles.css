@@ -1,4 +1,5 @@
 /*center form and make it visible with a border:*/
+
 form, .card {
     margin: 0 auto;
     height: 500px;
@@ -9,29 +10,26 @@ form, .card {
     border-radius: 1em;
     text-align: left;
 }
-
 img {
     height: 200px;
     max-width: 300px;
     margin: 2px;
 }
-
 h1 {
     font-size: 1em;
 }
 
 /*add some space between each of the form widgets:*/
-form div + div {
+
+form div {
     margin-top: 1.5em;
 }
-
 label {
     /* To make sure that all labels have the same size and are properly aligned */
     display: block;
     width: 90%;
     text-align: left;
 }
-
 input, textarea, .output {
     font: 1em sans-serif;
     width: 300px;
@@ -39,17 +37,14 @@ input, textarea, .output {
     box-sizing: border-box;
     border: 1px solid #999;
 }
-
-input:focus, textarea:focus {
+input, textarea:focus {
     border-color: #000;
 }
-
 textarea {
     vertical-align: top;
     height: 5em;
     resize: vertical;
 }
-
 #submit_button, #btn {
     padding-left: 0;
     color: white;
@@ -60,22 +55,18 @@ textarea {
     /*width: 75%;*/
     background-color: #3fbf6a;
 }
-
 #name {
     color: rgba(191, 191, 191, 0.8);
 }
-
-input[required]{
+input[required] {
     border: 1px solid #999;
 }
-
 input[required]::before {
     content: "*";
     width: 1em;
     height: 1em;
     display: block;
 }
-
 .output {
     font: 1em sans-serif;
     -moz-box-sizing: border-box;
@@ -83,11 +74,9 @@ input[required]::before {
     border: 1px solid #999;
     vertical-align: top;
     resize: vertical;
-
     content: "*";
     height: 1em;
     display: block;
-
     text-rendering: auto;
     color: initial;
     letter-spacing: normal;
@@ -98,12 +87,10 @@ input[required]::before {
     text-align: start;
     margin: 0em;
 }
-
 .two {
     float: right;
 }
-
-.two div + div {
+.two div {
     margin-top: 1.5em;
 }
 
