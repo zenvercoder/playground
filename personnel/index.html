@@ -1,57 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Galvanize Personnel</title>
 </head>
+
 <body>
-<form action="index.html" method="post" class="card one">
-    <h1>Galvanize Personnel</h1>
-    <div>
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="user_name" placeholder="Spongebob" required/>
-    </div>
-    <div>
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="user_name" placeholder="Spongebob" required/>
-    </div>
+    <form action="index.html" method="post" class="card one">
+        <h1>Galvanize Personnel</h1>
+        <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="user_name" placeholder="Spongebob" required/>
+        </div>
+        <div>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="user_name" placeholder="Spongebob" required/>
+        </div>
 
-    <!--drop down menu-->
-    <div>
-        <label for="role">Role:</label>
-        <select name="role" id="role">
+        <!--drop down menu-->
+        <div>
+            <label for="role">Role:</label>
+            <select name="role" id="role">
 
-        </select>
-    </div>
+            </select>
+        </div>
 
-    <img src="http://eadb.org/wp-content/uploads/2015/08/profile-placeholder.jpg" alt="placeholder img">
+        <img src="http://eadb.org/wp-content/uploads/2015/08/profile-placeholder.jpg" alt="placeholder img">
 
         <label for="submit_button"></label>
-        <input type="button" id="submit_button" name="user_button" placeholder="button" value="Save"/>
-</form>
+        <input type="button" id="submit_button" name="user_button" placeholder="button" value="Save" />
+    </form>
 
-<div class="card two">
-    <h1>Galvanize Personnel</h1>
-    <div>
-        <label for="firstName">First Name:</label>
-        <span class="output firstName"></span>
-    </div>
-    <div>
-        <label for="lastName">Last Name:</label>
-        <span class="output lastName"></span>
-    </div>
-    <div>
-        <label for="role">Role:</label>
-        <span class="output Role"></span>
-    </div>
-    <img id="user_image" src="http://eadb.org/wp-content/uploads/2015/08/profile-placeholder.jpg" alt="placeholder img">
-    <button type="button" id=" btn" name="user_button" value="Save">Save</button>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="main.js"></script>
-<!--<script src="./assets/scripts/app.js"></script>-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <!--<script src="./assets/scripts/app.js"></script>-->
 </body>
-</html>
 
+</html>
