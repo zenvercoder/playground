@@ -14,7 +14,7 @@ $(".location").on("submit", function(event) {
         success: function(data) {
             var fahrenheit =data.main.temp;
 
-            $(".location").on("submit" ,function() {
+            $(".button").on("submit" ,function() {
                 var hsl= gFahrenheit*6
                 var t1=  "hsl("
                 var t2=", 100%, 50%)"
