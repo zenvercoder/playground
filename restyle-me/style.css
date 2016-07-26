@@ -1,0 +1,51 @@
+.container {
+    font-family: sans-serif;
+    background-color: #260339;
+    color: #FFFEFF;
+    height: 1300px;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 5px;
+    text-align: center;
+    color: #260339;
+    background-image: url("https://67.media.tumblr.com/b77ff85946e241ecdd75c7ab3ba68ef9/tumblr_nynz5z30d91tzv1dpo1_500.gif");
+    /*background-size: cover;*/
+}
+
+.winter_is_coming {
+    height: 925px;
+    max-width: 100%;
+    background-image: url("http://static1.squarespace.com/static/55478095e4b0a65de4f86c6d/t/55df361ee4b02c5215f0e16a/1440691743913/?format=500w");
+    background-size: 100%;
+    color: #260339;
+}
+
+.words {
+    margin-top: 50px;
+    font-weight: 500;
+}
+
+#lat {
+    display: inline-block;
+}
+
+#long {
+    display: inline-block;
+}
+
+.search {
+    background-color: #260339;
+    color: #FFFEFF;
+}
+
+
+
+/*background-size: cover;*/
+/*<body class="imgWhatever">
+
+.img1 {
+    background-image: url("http://lsdkfjsdlfkj");
+    background-size: cover;
+}*/
