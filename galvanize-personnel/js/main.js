@@ -24,12 +24,15 @@ $('#role').on('change', function(event){
     $('#profile_pic').attr('src', currentRole.img);
 });
 
-var showMessage = function showMessage(message){
+//var showMessage = function showMessage(message){
     //implement showing a message
-    $('.save-status').text(message).show();
+    //$('.save-status').text(message).show();
     // TODO: Add timeout 2000ms
     // TODO: fade save status 500ms
-};
+//};
+
+// made it a fat arrow function
+var showMessage = (message) => $('.save-status').text(message).show();
 
 $('#submit_button').on('click', function(event){
     var firstName = $("#firstName").val();
