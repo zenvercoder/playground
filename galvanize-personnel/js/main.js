@@ -31,8 +31,16 @@ $('#role').on('change', function(event){
     // TODO: fade save status 500ms
 //};
 
+
+// faded in over 500ms to the .save-status paragraph, displayed for 2000ms, and faded out over 500ms.
+
 // made it a fat arrow function
-var showMessage = (message) => $('.save-status').text(message).show();
+//var showMessage = (message) => $('.save-status').text(message).show();
+var showMessage = (message) => $('.save-status')
+    .text(message).fadeIn(500)
+    .text(message).fadeOut(500);
+
+
 
 $('#submit_button').on('click', function(event){
     var firstName = $("#firstName").val();
