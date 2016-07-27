@@ -1,0 +1,49 @@
+body {
+    background-color: #f8f5f0;
+}
+
+.aaanold {
+    background-image: url("http://netflixlife.com/files/2015/07/the-terminator.jpg");
+    opacity: .3;
+    height: 200px;
+}
+
+h1, h2 {
+    text-align: center;
+    /*color: #98978b;*/
+    color: white;
+
+    opactiy: 1;
+    margin-top: -10px;
+}
+
+.jumbotron h1, .jumbotron .h1 {
+    /*color: #98978b;*/
+    /*color: #3e3f3a;;*/
+    text-align: center;
+}
+
+.jumbotron p {
+    color: #98978b;
+    text-align: center;
+}
+
+.study {
+    align-content: center;
+    /*background-image: url("http://www.internat-hogwarts.de/Unterricht/Bilder/Unterricht2.png")*/
+}
+
+.weeks {
+    align-content: left;
+    display: inline;
+}
+
+li {
+    color: #98978b;
+}
+
+
+
+
+
+/*("https://i.ytimg.com/vi/MWOdIIGOHGU/maxresdefault.jpg");*/

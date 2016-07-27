@@ -77,6 +77,8 @@ input[required]::before {
     display: block;
 }
 
+/* look up postcss prefixer*/
+
 .output {
     font: 1em sans-serif;
     -moz-box-sizing: border-box;

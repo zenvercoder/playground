@@ -27,11 +27,7 @@ h1 {
     font-weight: 500;
 }
 
-#lat {
-    display: inline-block;
-}
-
-#long {
+#lat, #long {
     display: inline-block;
 }
 

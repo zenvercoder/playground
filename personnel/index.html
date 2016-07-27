@@ -1,57 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Galvanize Personnel</title>
-</head>
-<body>
-<form action="index.html" method="post" class="card one">
-    <h1>Galvanize Personnel</h1>
-    <div>
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="user_name" placeholder="Spongebob" required/>
-    </div>
-    <div>
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="user_name" placeholder="Spongebob" required/>
-    </div>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Firebase Hosting</title>
+    <style media="screen">
+      body {
+        font-family: Roboto, Arial, sans-serif;
+        background: #ECEFF1;
+        color: rgba(0,0,0,0.87);
+      }
 
-    <!--drop down menu-->
-    <div>
-        <label for="role">Role:</label>
-        <select name="role" id="role">
+      a {
+        color: rgb(3,155,229);
+      }
 
-        </select>
+      #message {
+        max-width: 400px;
+        margin: 40px auto;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2),0 1px 1px 0 rgba(0,0,0,0.14),0 2px 1px -1px rgba(0,0,0,0.12);
+        border-radius: 2px;
+        background: white;
+        padding: 16px 24px;
+      }
+
+      #message h1 {
+        font-size: 22px;
+        font-weight: 500;
+        text-align: center;
+        margin: 0 0 16px;
+      }
+
+      #message p {
+        font-weight: 300;
+        line-height: 150%;
+      }
+
+      #message ul {
+        list-style: none;
+        margin: 16px 0 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      #message li a {
+        display: inline-block;
+        padding: 8px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 500;
+        background: rgb(3,155,229);
+        color: white;
+        border: 1px solid rgb(3,155,229);
+        border-radius: 3px;
+        font-size: 14px;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message">
+      <h1>Welcome to Firebase Hosting</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <ul>
+        <li><a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a></li>
+      </ul>
     </div>
-
-    <img src="http://eadb.org/wp-content/uploads/2015/08/profile-placeholder.jpg" alt="placeholder img">
-
-        <label for="submit_button"></label>
-        <input type="button" id="submit_button" name="user_button" placeholder="button" value="Save"/>
-</form>
-
-<div class="card two">
-    <h1>Galvanize Personnel</h1>
-    <div>
-        <label for="firstName">First Name:</label>
-        <span class="output firstName"></span>
-    </div>
-    <div>
-        <label for="lastName">Last Name:</label>
-        <span class="output lastName"></span>
-    </div>
-    <div>
-        <label for="role">Role:</label>
-        <span class="output Role"></span>
-    </div>
-    <img id="user_image" src="http://eadb.org/wp-content/uploads/2015/08/profile-placeholder.jpg" alt="placeholder img">
-    <button type="button" id=" btn" name="user_button" value="Save">Save</button>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="main.js"></script>
-<!--<script src="./assets/scripts/app.js"></script>-->
-</body>
+  </body>
 </html>
-
