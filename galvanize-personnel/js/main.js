@@ -24,23 +24,9 @@ $('#role').on('change', function(event){
     $('#profile_pic').attr('src', currentRole.img);
 });
 
-//var showMessage = function showMessage(message){
-    //implement showing a message
-    //$('.save-status').text(message).show();
-    // TODO: Add timeout 2000ms
-    // TODO: fade save status 500ms
-//};
-
-
-// faded in over 500ms to the .save-status paragraph, displayed for 2000ms, and faded out over 500ms.
-
 // made it a fat arrow function
 //var showMessage = (message) => $('.save-status').text(message).show();
-var showMessage = (message) => $('.save-status')
-    .text(message).fadeIn(500)
-    .text(message).fadeOut(500);
-
-
+var showMessage = (message) => $('.save-status').text(message).fadeIn(500);
 
 $('#submit_button').on('click', function(event){
     var firstName = $("#firstName").val();
@@ -53,8 +39,22 @@ $('#submit_button').on('click', function(event){
             //make sure it's not undefined with if statement
             if(data && data.message === "Success!"){
                 showMessage(data.message);
+                setTimeout(function(){
+                        $('.save-status').fadeOut(500);
+                        console.log("hide");
+                    },
+                    2000);
             }
+        },
+        error: function(){
+            showMessage("Not quite");
+            setTimeout(function(){
+                    $('.save-status').fadeOut(500);
+                },
+                2000);
+
         }
+
     });
 });
 
@@ -76,12 +76,3 @@ $.ajax({
 
     }
 });
-
-
-
-
-
-
-
-//keydown v keyup... keydown is suuuper slow
-//keydown, we get the previous value, one behind.
